@@ -50,3 +50,41 @@ Frontend: HTML5, CSS3, JavaScript
 Backend: Node.js (para funcionalidades futuras)
 
 IA: Modelos de linguagem natural para correção de redações e interação com o usuário
+
+## 👥 Equipe Coffflow  
+
+- Gabriel Damasceno Almeida 
+- Gustavo Moura De Jesus
+- Ketlyn Rodrigues De Miranda
+- Kevin De Jesus Ferreira
+- Mayara Vitótia Da Silva
+
+  ##
+  
+  <div align="center">
+  <h4>Contato</h4>
+  </div>
+  
+**Gabriel Damasceno Almeida:**
+
+[![Linkedin](https://img.shields.io/badge/LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gabriel-damasceno-almeida)
+
+  **Gustavo Moura De Jesus:**
+
+[![Linkedin](https://img.shields.io/badge/LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gustavo-moura-861938222)
+
+
+  **Ketlyn Rodrigues De Miranda:**
+
+[![Linkedin](https://img.shields.io/badge/LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ketlyn-rodriguesm)
+
+
+  **Kevin De Jesus Ferreira:**
+
+[![Linkedin](https://img.shields.io/badge/LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kevin-ferreira-security)
+
+
+  **Mayara Vitótia Da Silva:**
+
+[![Linkedin](https://img.shields.io/badge/LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mayaravdsilva)
+
