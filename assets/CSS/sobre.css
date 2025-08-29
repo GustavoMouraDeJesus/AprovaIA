@@ -1,0 +1,767 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+  --cor-principal: #0A113F;
+  --cor-fundo-clara: #FFFAFA;
+  --cor-destaque: #92FF00;
+  --fonte-poppins: "Poppins", sans-serif;
+}
+
+body{
+    background-color:var(--cor-fundo-clara);
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+    color: var(--cor-principal);
+}
+
+/* Inicio estilo Header/ Cabeçalho */
+#cabecalho{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 120px;
+    background-color: var(--cor-principal);
+}
+
+#verde{
+    color: #8AF101;
+}
+
+#logo{
+    margin-left: 50px;
+    width: 85px;
+}
+
+#title_logo{
+    margin: 25px;
+
+    font-size: 46px;
+    color: whitesmoke;
+    width: 30px;
+    font-family: "Poppins", sans-serif;
+}
+
+
+#nav1, #nav2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    & a:hover{
+        color: var(--cor-destaque);
+    }
+}
+
+#nav1 {
+    position: relative;
+    float: left;
+    margin-left: 10%;
+    margin-right: 20%;
+
+    & a{
+        margin-right:20px;
+        margin-left: 20px;
+        color:#FFFAFA;
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: 700;
+        transition: 0.3s;
+
+    }
+}
+
+#nav2{
+    position: relative;
+    float: left;
+    
+    padding-left: 0px; /*empurra o login e cadastro para a direita*/
+
+    & a{
+        color: #FFFAFA;
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: 700;
+
+    }
+}
+
+    
+#login a {
+    position: relative;
+    margin-right: 20px;
+    text-align: center;
+    display: inline;
+    height: 40px;
+
+    /*formato botão*/
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 7px 15px;
+    color: #FFFAFA;
+    background: transparent;
+}
+
+.texto-reduzido {
+        display: none !important; /* Esconde "ENTRAR" por padrão */
+}
+
+#cadastro a{
+    position: relative;
+    margin-right: 20px;
+    text-align: center;
+    display: inline;
+    height: 40px;
+    transition: all 0.3s ease;
+    
+    /*formato botão*/
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 7px 15px;
+    color: var(--cor-principal);
+    background: var(--cor-destaque);
+}
+
+#cadastro a:hover{
+    box-shadow: var(--cor-destaque);
+    color: var(--cor-principal);
+    transform: translateY(-2px);
+}
+
+/* Área de texto e imagem da página quem nós somos*/
+#bloco2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 750px;
+  min-height: 851px;
+  padding: 0 50px;
+  background-color: #0A113F;
+  color: #FFFAFA;
+  box-sizing: border-box;
+}
+
+.texto {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  width: 40%;
+  font-size: 37px;
+}
+
+#titulo {
+  font-size: 46px;
+}
+
+#texto2 {
+  font-size: 26px;
+  line-height: 1.6;
+}
+
+.menino{
+    margin-top: 160px;
+}
+
+.menino img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+}
+
+/* Container que agrupa os 3 cartões */
+#valores {
+  margin: 50px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 100px;
+  padding: 0 50px;
+  max-width: 1400px;
+}
+
+/* Estilo geral para os três cartões */
+.missao, .visao, .valores {
+    position: relative;
+    width: 450px;
+    min-height: 300px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 15px 20px 20px rgba(128, 128, 128, 0.2);
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+/* Estilo para os títulos */
+.titulo {
+    font-size: 30px;
+    margin-top: -10px;
+    margin-left: 120px;
+}
+
+/* Estilo para os parágrafos */
+.mis {
+    margin-left: 120px;
+    line-height: 1.5;
+}
+
+/* Estilo para os ícones */
+.flecha{
+    width:100px;
+    height: 80px;
+    float: left;
+}
+
+.olho{
+    width:100px;
+    height: 70px;
+    float: left;
+}
+
+.maos {
+    width: 90px;
+    height: 80px;
+    float: left;
+}
+
+/* Estilos específicos para as bordas coloridas */
+.missao {
+    border: 2px solid #92FF00;
+}
+
+.visao {
+    border: 2px solid #FF11FF;
+}
+
+.valores {
+    border: 2px solid #00FFFF;
+}
+
+/*Imagens e fundadores*/
+#fundadores{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+h2{
+    text-align: center;
+    font-size: 35px;
+    margin: 50px 0;
+}
+
+#fundadores2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 100px;
+}
+
+.Gabriel img, .Gustavo img, .Ketlyn img, .Kevin img, .Mayara img {
+    width: 200px;
+    height: auto;
+}
+
+/* Seção Rodapé Footer Geral - IDÊNTICO AO INDEX */
+.footer {
+    background-color: var(--cor-principal);
+    color: var(--cor-fundo-clara);
+    padding: 30px 50px;
+}
+
+/* ----- Container Principal ----- */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* ----- Cada coluna do footer ----- */
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+/* ----- Logo ----- */
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    margin: 0;
+}
+
+.logo-img {
+    height: 40px;
+}
+
+.destaque3{
+    color: var(--cor-destaque);
+    font-weight: bold;
+}
+
+/* ----- Títulos das seções ----- */
+.footer-title {
+    margin: 15px 0 8px;
+    font-weight: bold;
+}
+
+/* ----- Redes Sociais ----- */
+.social-icons {
+    display: flex;
+    gap: 12px;
+    font-size: 40px;
+}
+
+.social-icons a {
+    color: white;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: var(--cor-destaque);
+}
+
+/* ----- Listas ----- */
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin: 6px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: var(--cor-destaque);
+}
+
+/* ----- Parte de baixo ----- */
+.footer-bottom {
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.footer-bottom a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    color: var(--cor-destaque);
+}
+
+/*Botão Acessibilidade*/
+.leitor-controles {
+    width: 120px;
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+    position: fixed;
+    bottom: 80px;
+    font-family: var(--fonte-poppins);
+    right: 22px;
+}
+
+.leitor-controles.ativo {
+    display: flex;
+}
+
+.leitor-btn {
+    background: #555;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.leitor-btn:hover {
+    background: #333;
+}
+
+.leitor-toggle {
+    background: #0056b3;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    font-family: var(--fonte-poppins);
+    right: 20px;
+}
+
+
+/* Media Queries para Responsividade - Cabeçalho */
+
+/* Ajustes gerais para responsividade */
+#cabecalho {
+    flex-wrap: wrap;
+    padding: 0 clamp(20px, 3vw, 50px);
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Controle do texto do botão cadastro/login - PADRÃO */
+.texto-completo {
+    display: inline;
+}
+
+.texto-reduzido {
+    display: none;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+#logo {
+    width: clamp(60px, 8vw, 85px);
+}
+
+#title_logo {
+    margin-left: clamp(10px, 2vw, 25px);
+    font-size: clamp(32px, 4vw, 46px);
+    white-space: nowrap;
+}
+
+#nav1 {
+    flex-grow: 1;
+    justify-content: center;
+    margin: 0 clamp(10px, 2vw, 20px);
+    gap: clamp(15px, 2vw, 30px);
+    flex-wrap: wrap;
+}
+
+#nav1 a {
+    font-size: clamp(18px, 2.2vw, 25px);
+    white-space: nowrap;
+}
+
+#nav2 {
+    gap: clamp(10px, 1.5vw, 20px);
+    flex-shrink: 0;
+}
+
+#nav2 ul {
+    display: flex;
+    gap: clamp(10px, 1.5vw, 20px);
+    list-style: none;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+#cadastro a {
+    font-size: clamp(16px, 2vw, 25px);
+    padding: clamp(5px, 1vw, 7px) clamp(10px, 1.5vw, 15px);
+    white-space: nowrap;
+    border: 1px solid white;
+    border-radius: 50px;
+    color: var(--cor-principal);
+    background: var(--cor-destaque);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+    min-height: 40px;
+    transition: all 0.3s ease;
+}
+
+/* Footer responsivo */
+.footer {
+    padding: clamp(20px, 3vw, 30px) clamp(20px, 3vw, 50px);
+}
+
+.footer-container {
+    gap: clamp(20px, 3vw, 30px);
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    min-width: clamp(200px, 25vw, 300px);
+    font-size: clamp(20px, 2.2vw, 25px);
+}
+
+.logo {
+    font-size: clamp(28px, 3.5vw, 35px);
+}
+
+.footer-title {
+    font-size: clamp(22px, 2.5vw, 25px);
+}
+
+.social-icons {
+    font-size: clamp(30px, 3.5vw, 40px);
+    gap: clamp(8px, 1.2vw, 12px);
+}
+
+.footer-section ul li a {
+    font-size: clamp(18px, 2vw, 25px);
+}
+
+.footer-bottom {
+    font-size: clamp(16px, 1.8vw, 20px);
+    text-align: center;
+}
+
+/* NOVA RESPONSIVIDADE - Nome AprovaIA some em 1800px ou menos */
+@media (max-width: 1800px) {
+    #title_logo {
+        display: none;
+    }
+    
+    #logo {
+        margin-left: clamp(20px, 3vw, 50px);
+    }
+}
+
+/* NOVA RESPONSIVIDADE - Botão muda para ENTRAR em 1550px ou menos */
+@media (max-width: 1550px) {
+    .texto-completo {
+        display: none !important;
+    }
+
+    .texto-reduzido {
+        display: inline !important;
+    }
+}
+
+/* Media Queries específicas para outras seções */
+@media (max-width: 1400px) {
+    #bloco2 {
+        padding: 0 30px;
+        min-height: 700px;
+    }
+    
+    .texto {
+        gap: 40px;
+    }
+    
+    #titulo {
+        font-size: 28px;
+    }
+    
+    #texto2 {
+        font-size: 16px;
+    }
+    
+    .menino img {
+
+    }
+    
+    #valores {
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 0 30px;
+    }
+    
+    .missao, .visao, .valores {
+        width: 100%;
+        max-width: 400px;
+        min-height: 280px;
+    }
+    
+    .titulo {
+        font-size: 26px;
+    }
+    
+    .mis {
+        font-size: 16px;
+    }
+    
+    #fundadores, #fundadores2 {
+        gap: 100px;
+    }
+    
+    .Gabriel img, .Gustavo img, .Ketlyn img, .Kevin img, .Mayara img {
+        width: 150px;
+    }
+}
+
+@media (max-width: 1200px) {
+    #cabecalho {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+        text-align: center;
+    }
+
+    #nav1 {
+        margin: 0;
+        justify-content: center;
+        order: 2;
+    }
+
+    #nav2 {
+        order: 3;
+        justify-content: center;
+    }
+
+    .logo-section {
+        order: 1;
+    }
+    
+    /* Ajustes adicionais para o botão em telas muito pequenas */
+    #cadastro a {
+        font-size: 18px;
+        padding: 6px 12px;
+    }
+
+    #bloco2 {
+        flex-direction: column;
+        padding: 60px 30px;
+        text-align: center;
+    }
+    
+    .texto {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    
+    .menino img {
+        max-width: 400px;
+    }
+    
+    #fundadores, #fundadores2 {
+        gap: 70px;
+        font-size: 24px;
+    }
+    
+    .Gabriel img, .Gustavo img, .Ketlyn img, .Kevin img, .Mayara img {
+        width: 120px;
+    }
+    
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 1000px) {
+    #nav1 {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    #nav1 a,
+    #login a,
+    #cadastro a {
+        font-size: 20px;
+    }
+
+    #bloco2 {
+        padding: 40px 20px;
+    }
+    
+    .texto {
+        gap: 30px;
+    }
+    
+    #titulo {
+        font-size: 24px;
+    }
+    
+    #texto2 {
+        font-size: 14px;
+    }
+    
+    .menino img {
+        max-width: 300px;
+    }
+    
+    #valores {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    
+    .missao, .visao, .valores {
+        width: 100%;
+        max-width: 350px;
+        min-height: 250px;
+        padding: 20px;
+    }
+    
+    .titulo {
+        font-size: 22px;
+        margin-left: 0;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .mis {
+        margin-left: 0;
+        text-align: center;
+        font-size: 14px;
+    }
+    
+    .flecha, .olho, .maos {
+        float: none;
+        display: block;
+        margin: 0 auto;
+        width: 70px;
+        height: 60px;
+    }
+    
+    h2 {
+        font-size: 28px;
+        margin: 30px 0;
+    }
+    
+    #fundadores, #fundadores2 {
+        flex-wrap: wrap;
+        gap: 40px;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .Gabriel, .Gustavo, .Ketlyn, .Kevin, .Mayara {
+        flex: 0 0 calc(50% - 40px);
+    }
+    
+    .Gabriel img, .Gustavo img, .Ketlyn img, .Kevin img, .Mayara img {
+        width: 100px;
+    }
+}

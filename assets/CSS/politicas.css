@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --cor-principal: #0A113F;
+  --cor-fundo-clara: #FFFAFA;
+  --cor-destaque: #92FF00;
+  --fonte-poppins: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-fundo-clara);
+}
+
+/* --- INÍCIO HEADER --- */
+/* Inicio estilo Header/ Cabeçalho */
+#cabecalho{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 120px;
+    background-color: var(--cor-principal);
+}
+
+#verde{
+    color: #8AF101;
+}
+
+#logo{
+    margin-left: 50px;
+    width: 85px;
+}
+
+#title_logo{
+    margin: 25px;
+
+    font-size: 46px;
+    color: whitesmoke;
+    width: 30px;
+    font-family: "Poppins", sans-serif;
+}
+
+
+#nav1, #nav2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    & a:hover{
+        color: var(--cor-destaque);
+    }
+}
+
+#nav1 {
+    position: relative;
+    float: left;
+    margin-left: 10%;
+    margin-right: 20%;
+
+    & a{
+        margin-right:20px;
+        margin-left: 20px;
+        color:#FFFAFA;
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: 700;
+        transition: 0.3s;
+
+    }
+}
+
+#nav2{
+    position: relative;
+    float: left;
+    
+    padding-left: 0px; /*empurra o login e cadastro para a direita*/
+
+    & a{
+        color: #FFFAFA;
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: 700;
+
+    }
+}
+
+    
+#login a {
+    position: relative;
+    margin-right: 20px;
+    text-align: center;
+    display: inline;
+    height: 40px;
+
+    /*formato botão*/
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 7px 15px;
+    color: #FFFAFA;
+    background: transparent;
+}
+
+.texto-reduzido {
+        display: none !important; /* Esconde "ENTRAR" por padrão */
+}
+
+#cadastro a{
+    position: relative;
+    margin-right: 20px;
+    text-align: center;
+    display: inline;
+    height: 40px;
+    transition: all 0.3s ease;
+    
+    /*formato botão*/
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 7px 15px;
+    color: var(--cor-principal);
+    background: var(--cor-destaque);
+}
+
+#cadastro a:hover{
+    box-shadow: var(--cor-destaque);
+    color: var(--cor-principal);
+    transform: translateY(-2px);
+}
+
+#container {
+    flex: 1; /* Faz o container principal ocupar o espaço restante */
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto; /* Centraliza o container */
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h1 {
+    font-size: 48px;
+    color: #0A113F;
+    font-weight: 700;
+}
+
+/* --- INÍCIO FORMATAÇÃO DO ACCORDION --- */
+.accordion {
+    border: 1px solid #E0E0E0;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+}
+
+.accordion-header {
+    width: 100%;
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #0A113F;
+    cursor: pointer;
+    text-align: left;
+}
+
+.accordion-header .icon {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.accordion-body {
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.accordion-body p,
+.accordion-body ul {
+    margin-bottom: 16px;
+}
+
+.accordion-body ul {
+    list-style-position: inside;
+    padding-left: 20px;
+}
+
+.accordion-body.active {
+    height: auto;
+    opacity: 1;
+    padding: 0 20px 20px 20px;
+}
+/* --- FIM DA FORMATAÇÃO DO ACCORDION --- */
+
+/* Seção Rodapé Footer Geral*/
+.footer {
+    background-color: var(--cor-principal);
+    color: var(--cor-fundo-clara);
+    padding: 30px 50px;
+}
+
+/* ----- Container Principal ----- */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* ----- Cada coluna do footer ----- */
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+/* ----- Logo ----- */
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    margin: 0;
+}
+
+.logo-img {
+    height: 40px;
+}
+
+/* ----- Títulos das seções ----- */
+.footer-title {
+    margin: 15px 0 8px;
+    font-weight: bold;
+}
+
+/* ----- Redes Sociais ----- */
+.social-icons {
+    display: flex;
+    gap: 12px;
+    font-size: 40px;
+}
+
+.social-icons a {
+    color: white;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: var(--cor-destaque);
+}
+
+/* ----- Listas ----- */
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin: 6px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: var(--cor-destaque);
+}
+
+/* ----- Parte de baixo ----- */
+.footer-bottom {
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.footer-bottom a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    color: var(--cor-destaque);
+}
+
+/*Botão Acessibilidade*/
+.leitor-controles {
+    width: 120px;
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+    position: fixed;
+    bottom: 80px;
+    font-family: var(--fonte-poppins);
+    right: 22px;
+}
+
+.leitor-controles.ativo {
+    display: flex;
+}
+
+.leitor-btn {
+    background: #555;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.leitor-btn:hover {
+    background: #333;
+}
+
+.leitor-toggle {
+    background: #0056b3;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    font-family: var(--fonte-poppins);
+    right: 20px;
+}
+
