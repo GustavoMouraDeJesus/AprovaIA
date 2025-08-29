@@ -51,7 +51,7 @@ Backend: Node.js (para funcionalidades futuras)
 
 IA: Modelos de linguagem natural para correção de redações e interação com o usuário
 
-## 👥 Equipe Coffflow  
+## 👥 Equipe AprovaIA 
 
 - Gabriel Damasceno Almeida 
 - Gustavo Moura De Jesus
